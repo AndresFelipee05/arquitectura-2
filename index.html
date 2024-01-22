@@ -22,7 +22,7 @@
             display: flex;
             justify-content: space-around; 
             position: sticky;
-            top:0;
+            top:0;          
         }
 
         nav a { text-decoration: none;
@@ -51,9 +51,7 @@
             text-shadow: 3px 3px 3px black;
         }
 
-        section#servicios {
-            
-        }
+
         #contenedor-servicios {
             display: flex;
             padding: 10px;
@@ -124,6 +122,26 @@
         #contenedor-clientes article h3 { font-style: italic;}
         #contenedor-clientes article img { width: 40%;border-radius: 50%;}
         #izquierda, #derecha { width: 40%;}
+
+        @media (max-width:600px){
+             nav { display: block; background-color: deeppink;
+                position: static;}
+
+             nav a { display: block; text-align:center;}
+
+             #contenedor-servicios{display: block;}
+
+             #izquierda,#derecha{width: 100%;}
+
+             #contacte{width: 100%;}
+
+             #enlaces{width: 100%;}
+
+             #estamos-en{width: 100%;}
+
+             #email{width: 100%;}
+
+        } 
     </style>
     <script src="https://kit.fontawesome.com/fe060c3d5b.js" crossorigin="anonymous"></script>
 </head>
@@ -132,7 +150,7 @@
         <a href="#">Inicio</a>
         <a href="#servicios">Servicios</a>
         <a href="#obras">Obras</a>
-        <a href="#">Contacto</a>
+        <a href="#contacte">Contacto</a>
     </nav>
     <header>
         <div id="caja-titulos">
@@ -222,7 +240,6 @@
             <h2>E-mail</h2>
             <p>arquitecto@agora.com</p>
         </div>
-
     </footer>
 </body>
 </html>
